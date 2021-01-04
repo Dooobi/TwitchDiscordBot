@@ -1,0 +1,16 @@
+{
+  "generator-easy-ui5": {
+    "projectname": "TwitchDiscordBot",
+    "namespace": "de.demindh",
+    "platform": "Static webserver",
+    "viewtype": "XML",
+    "viewname": "Main",
+    "ui5libs": "Content delivery network (OpenUI5)",
+    "newdir": true,
+    "namespaceURI": "de/demindh",
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}
