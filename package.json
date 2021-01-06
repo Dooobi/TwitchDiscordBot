@@ -27,5 +27,10 @@
     "dependencies": [
       "ui5-middleware-livereload"
     ]
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.1",
+    "tmi.js": "^1.7.1"
   }
 }
