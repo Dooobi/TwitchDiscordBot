@@ -1,3 +1,4 @@
+const http = require('http');
 const tmi = require('tmi.js');
 const Discord = require('discord.js');
 const discordCharWidth = require('./discordCharWidth.json');
@@ -273,3 +274,12 @@ function log(name, message) {
     var tag = `[${name}]`.padEnd(maxNameLength);
     console.log(`${tag} (${new Date().toLocaleTimeString('de-DE')}) ${message}`);
 }
+
+http.createServer(function (request, response) {
+
+    console.log(`Request incoming from ${request.socket.remoteAddress}:${request.socket.remotePort} (${request.socket.remoteFamily}) for path '${request.url}'`);
+    
+    response.writeHead(200);
+    response.end('Server running!');
+
+ }).listen(process.env.PORT || 1337);
